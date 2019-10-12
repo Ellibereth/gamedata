@@ -1,0 +1,10 @@
+en:
+  js: 
+    topic:
+      gameinfo:
+        playercount: "Playercount"
+        day_length: "Day Length"
+        night_length: "Night Length"
+        
+
+      

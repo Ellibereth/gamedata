@@ -1,0 +1,5 @@
+{{#if currentUser.staff}}
+  {{input value=buffered.playercount placeholder=(i18n 'topic.gameinfo.playercount')}}
+  {{input value=buffered.day_length placeholder=(i18n 'topic.gameinfo.day_length')}}
+  {{input value=buffered.night_length placeholder=(i18n 'topic.gameinfo.night_length')}}
+{{/if}}

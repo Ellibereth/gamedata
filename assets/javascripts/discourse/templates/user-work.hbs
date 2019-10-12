@@ -1,0 +1,23 @@
+<section>
+  <div class="control-group">
+    <label>{{i18n 'user.work.billable_hours_week'}}</label>
+    <div class="controls">
+      {{input type="integer" value=model.billable_hours_week}}
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <label>{{i18n 'user.work.billable_total_month'}}</label>
+    <div class="controls">
+      {{input type="integer" value=model.billable_total_month}}
+    </div>
+  </div>
+  
+  <div class="work-controls">
+    {{d-button action="save" label="user.work.save"}}
+    {{#if saving}}
+      <span>{{i18n 'user.work.saving'}}</span>
+      {{loading-spinner size="small"}}
+    {{/if}}
+  </div>
+</section>

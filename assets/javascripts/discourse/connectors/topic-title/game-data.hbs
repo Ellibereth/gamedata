@@ -1,0 +1,22 @@
+{{#unless model.editingTopic}}
+  {{#if model.playercount}}
+    <div class="gameinfo-label">
+      {{d-icon 'users'}}
+      {{model.playercount}}
+    </div>
+  {{/if}}
+
+  {{#if model.day_length}}
+    <div class="gameinfo-label">
+      {{d-icon 'sun'}}
+      {{model.day_length}}
+    </div>
+  {{/if}}
+  
+  {{#if model.night_length}}
+    <div class="gameinfo-label">
+      {{d-icon 'moon'}}
+      {{model.night_length}}
+    </div>
+  {{/if}}
+{{/unless}}
